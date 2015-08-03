@@ -274,6 +274,7 @@ class ZipBatchImportObject extends IslandoraImportObject {
         if (isset($hook_output[$hook_key]['source_dsid']) && $hook_output[$hook_key]['source_dsid'] == $dsid[$arr_key]['id']) {
           // We have a match on source object, this is it.
           $source_dsid = $hook_output[$hook_key]['source_dsid'];
+          break 2;
         }
       }
     }
